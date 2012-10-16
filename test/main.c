@@ -22,7 +22,7 @@
 
 int main()
 {
-	xenos_init(VIDEO_MODE_AUTO);
+	xenos_init(VIDEO_MODE_VGA_640x480);
 	console_init();
 
 	xenon_make_it_faster(XENON_SPEED_FULL);
@@ -36,7 +36,7 @@ int main()
 
 	fatInitDefault();
 	
-	xenon_caps_init("uda:/video.mp4");
+	xenon_caps_init("uda:/video.avi");
 	xenon_caps_start();
 	
 	int i = 20;

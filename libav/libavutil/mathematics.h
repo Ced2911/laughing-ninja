@@ -23,7 +23,9 @@
 
 #include <stdint.h>
 #include <math.h>
+#ifdef HAVE_AV_CONFIG_H
 #include "libxenon_miss/miss.h"
+#endif
 #include "attributes.h"
 #include "rational.h"
 #include "intfloat.h"
